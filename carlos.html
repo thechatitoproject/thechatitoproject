@@ -1,1 +1,368 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Carlos’s Story | The Chatito Project</title><link rel="stylesheet" href="styles.css"></head><body><nav><a href="index.html"><img src="assets/chatito-logo.svg" alt="The Chatito Project"></a><div><a href="index.html">Home</a><a href="carlos.html">Carlos</a><a href="mission.html">Our Mission</a><a href="resources.html">Get Help</a><a href="gallery.html">Remember Carlos</a><a href="get-involved.html">Get Involved</a><a href="contact.html">Contact</a></div></nav><main><div class="box"><p><strong>THE CHATITO PROJECT</strong></p><h1>Carlos “Chatito”</h1><p>Carlos had a contagious smile, a great sense of humor, and a way of making people feel welcome. He loved being outdoors, playing football with neighbors, riding his bike with friends, and talking to everyone. He wanted to befriend people regardless of age. His family wants people to know Carlos for the joy, humor, friendship, and love he shared.</p><div class="gold"><strong>You’re loved. You matter. You’re not a burden. Don’t give up.</strong></div><div class="photos"><img src="assets/carlos-3.jpeg" alt="Carlos laughing"><img src="assets/carlos-4.jpeg" alt="Carlos smiling"><img src="assets/carlos-5.jpeg" alt="Carlos wearing glasses"></div></div></main><footer>The Chatito Project • Created in loving memory of Carlos “Chatito.”</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Remember Carlos | The Chatito Project</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #050608;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #071a3d;
+      padding: 22px 20px;
+      text-align: center;
+      border-bottom: 4px solid #f4c542;
+    }
+
+    header img {
+      width: 190px;
+      max-width: 80%;
+    }
+
+    nav {
+      background: #111827;
+      padding: 16px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 5px 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #f4c542;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 65px 20px;
+      background: #071a3d;
+    }
+
+    .eyebrow {
+      color: #f4c542;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 64px);
+      margin: 15px 0;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #dddddd;
+      font-size: 19px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .story-photo img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 4px solid #f4c542;
+    }
+
+    h2 {
+      color: #f4c542;
+      font-size: 35px;
+      margin-top: 0;
+    }
+
+    p {
+      color: #dddddd;
+      font-size: 17px;
+    }
+
+    .memory-box {
+      margin-top: 30px;
+      padding: 25px;
+      background: #111827;
+      border-left: 5px solid #f4c542;
+      border-radius: 8px;
+    }
+
+    .memory-box strong {
+      color: #f4c542;
+    }
+
+    .values {
+      background: #071a3d;
+    }
+
+    .values-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .value-card {
+      background: #111827;
+      padding: 30px 25px;
+      border-radius: 14px;
+      text-align: center;
+    }
+
+    .value-card h3 {
+      color: #f4c542;
+      font-size: 23px;
+    }
+
+    .closing {
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .closing h2 {
+      font-size: 40px;
+    }
+
+    .closing p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 25px;
+      background: #f4c542;
+      color: #050608;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #111827;
+      text-align: center;
+      padding: 35px 20px;
+      color: #aaaaaa;
+    }
+
+    footer strong {
+      color: #f4c542;
+    }
+
+    @media (max-width: 800px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      nav a {
+        margin: 4px 6px;
+        font-size: 14px;
+      }
+
+      .section {
+        padding: 50px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img
+    src="https://thechatitoproject.org/chatito-logo.svg"
+    alt="The Chatito Project"
+  >
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="carlos.html">Carlos</a>
+  <a href="mission.html">Our Mission</a>
+  <a href="resources.html">Get Help</a>
+  <a href="gallery.html">Remember Carlos</a>
+  <a href="get-involved.html">Get Involved</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+
+  <div class="eyebrow">IN LOVING MEMORY</div>
+
+  <h1>Remember Carlos</h1>
+
+  <p>
+    His smile. His laughter. His kindness. His memories.
+  </p>
+
+</section>
+
+<section class="section">
+
+  <div class="story-grid">
+
+    <div class="story-photo">
+
+      <img
+        src="https://thechatitoproject.org/IMG_0096.jpeg"
+        alt="Carlos smiling and giving two thumbs up"
+      >
+
+    </div>
+
+    <div>
+
+      <h2>Who Carlos Was</h2>
+
+      <p>
+        Carlos, lovingly known as “Chatito,” was a young person
+        whose smile and personality left an impression on the people
+        around him.
+      </p>
+
+      <p>
+        He loved being outdoors. He enjoyed playing football with
+        the neighborhood kids and riding his bike with his friends.
+      </p>
+
+      <p>
+        Carlos loved talking to people. He didn't care about age
+        differences or whether someone was already part of his
+        circle. He wanted to be friends with everyone.
+      </p>
+
+      <p>
+        He was respectful, making eye contact and giving a firm
+        handshake. People noticed his smile, his humor, and the way
+        he could make people laugh.
+      </p>
+
+      <div class="memory-box">
+
+        <strong>What we want people to remember:</strong>
+
+        <p>
+          Carlos was more than the way his life ended.
+          He was a son, a friend, a brother, a family member,
+          and a person who brought his own unique light into
+          the lives of others.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="values">
+
+  <div class="section">
+
+    <div style="text-align:center; margin-bottom:40px;">
+
+      <h2>The Things We Remember</h2>
+
+      <p>
+        These are the qualities and memories we hope continue
+        to live on through The Chatito Project.
+      </p>
+
+    </div>
+
+    <div class="values-grid">
+
+      <div class="value-card">
+        <h3>His Smile</h3>
+        <p>
+          Carlos had a contagious smile that people noticed
+          and remembered.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>His Humor</h3>
+        <p>
+          He was funny, quick with comebacks, and knew how
+          to make people laugh.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>His Heart</h3>
+        <p>
+          Carlos wanted to connect with people and make friends
+          with everyone around him.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="closing">
+
+  <h2>His Story Continues</h2>
+
+  <p>
+    We cannot change the past, but we can use Carlos' memory
+    to encourage awareness, compassion, connection, and hope.
+  </p>
+
+  <a class="button" href="mission.html">
+    Learn About Our Mission
+  </a>
+
+</section>
+
+<footer>
+
+  <strong>The Chatito Project</strong><br>
+  Created in loving memory of Carlos “Chatito.”<br><br>
+  Love • Awareness • Hope
+
+</footer>
+
+</body>
+</html>
