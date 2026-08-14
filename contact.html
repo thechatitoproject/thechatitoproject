@@ -1,1 +1,226 @@
-<div class="photos"><img src="IMG_0096.jpeg" alt="Carlos “Chatito”"><img src="IMG_0102.jpeg" alt="Carlos “Chatito”"><img src="IMG_1588.jpeg" alt="Carlos “Chatito”"><img src="IMG_1749.jpeg" alt="Carlos “Chatito”"><img src="IMG_1782.jpeg" alt="Carlos “Chatito”"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | The Chatito Project</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #050608;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: #071a3d;
+      padding: 22px 20px;
+      text-align: center;
+      border-bottom: 4px solid #f4c542;
+    }
+    header img {
+      width: 190px;
+      max-width: 80%;
+    }
+    nav {
+      background: #111827;
+      padding: 16px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover {
+      color: #f4c542;
+    }
+    .hero {
+      text-align: center;
+      padding: 65px 20px;
+      background: #071a3d;
+    }
+    .hero h1 {
+      font-size: 45px;
+      margin: 10px 0;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #dddddd;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    .note-box {
+      background: #111827;
+      padding: 35px;
+      border-radius: 16px;
+      border-top: 5px solid #f4c542;
+    }
+    .note-box h2 {
+      color: #f4c542;
+      margin-top: 0;
+      font-size: 30px;
+    }
+    .note-box p {
+      color: #dddddd;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 7px;
+      font-weight: bold;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid #555;
+      background: #050608;
+      color: white;
+      font-size: 16px;
+    }
+    textarea {
+      min-height: 180px;
+      resize: vertical;
+    }
+    .check-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: normal;
+    }
+    .check-row input {
+      width: auto;
+    }
+    button {
+      margin-top: 25px;
+      padding: 14px 28px;
+      background: #f4c542;
+      color: #050608;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .privacy {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+    footer {
+      background: #111827;
+      text-align: center;
+      padding: 35px 20px;
+      color: #aaa;
+    }
+    footer strong {
+      color: #f4c542;
+    }
+    @media (max-width: 600px) {
+      .note-box {
+        padding: 25px 18px;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img
+    src="https://thechatitoproject.org/chatito-logo.svg"
+    alt="The Chatito Project"
+  >
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="carlos.html">Carlos</a>
+  <a href="mission.html">Our Mission</a>
+  <a href="resources.html">Get Help</a>
+  <a href="gallery.html">Remember Carlos</a>
+  <a href="get-involved.html">Get Involved</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<section class="hero">
+  <h1>Leave a Note 💙</h1>
+  <p>
+    Share a memory, a message of love, or words of encouragement
+    in honor of Carlos “Chatito.”
+  </p>
+</section>
+<main class="container">
+  <div class="note-box">
+<h2>Your Message Matters</h2>
+<p>
+  Your words may help another family feel less alone.
+  Thank you for helping us keep Carlos' memory and message of
+  hope alive.
+</p>
+<form
+  action="https://formspree.io/f/xrpzkwva"
+  method="POST"
+>
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Message for The Chatito Project"
+  >
+  <label for="name">Your Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Your name"
+  >
+  <label class="check-row">
+    <input
+      type="checkbox"
+      name="anonymous"
+      value="Yes"
+    >
+    I'd like to leave my note anonymously.
+  </label>
+  <label for="message">Your Message</label>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Write your message here..."
+    required
+  ></textarea>
+  <button type="submit">
+    💙 Leave My Note
+  </button>
+</form>
+<p class="privacy">
+  Please do not include private information that you would not
+  want shared. This form is for messages and memories, not for
+  emergency situations.
+</p>
+  </div>
+</main>
+<footer>
+  <strong>The Chatito Project</strong><br>
+  Created in loving memory of Carlos “Chatito.”<br><br>
+  Love • Awareness • Hope
+</footer>
+</body>
+</html>
