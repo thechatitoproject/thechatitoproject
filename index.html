@@ -11,36 +11,46 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #050608;
-      color: white;
+      color: #ffffff;
+      line-height: 1.6;
     }
 
     header {
       background: #071a3d;
-      padding: 20px;
+      padding: 22px 20px;
       text-align: center;
       border-bottom: 4px solid #f4c542;
     }
 
     header img {
-      width: 180px;
+      width: 190px;
       max-width: 80%;
     }
 
     nav {
       background: #111827;
-      padding: 15px;
+      padding: 16px 10px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #333;
     }
 
     nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 5px 10px;
       font-weight: bold;
+      display: inline-block;
     }
 
     nav a:hover {
@@ -48,66 +58,221 @@
     }
 
     .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 70px 20px;
-      background: #071a3d;
+      background:
+        linear-gradient(rgba(7, 26, 61, 0.88), rgba(5, 6, 8, 0.95)),
+        url("https://thechatitoproject.org/IMG_0096.jpeg") center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: #f4c542;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 15px;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin: 15px auto;
-      max-width: 800px;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.08;
+      margin: 20px 0;
+    }
+
+    .hero h1 span {
+      color: #f4c542;
     }
 
     .hero p {
-      font-size: 21px;
-      max-width: 700px;
+      max-width: 720px;
       margin: 20px auto;
-      line-height: 1.6;
+      font-size: 20px;
+      color: #eeeeee;
     }
 
-    .gold {
+    .buttons {
+      margin-top: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 7px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-gold {
+      background: #f4c542;
+      color: #050608;
+    }
+
+    .button-blue {
+      background: #0878d1;
+      color: #ffffff;
+    }
+
+    .button-dark {
+      background: #111827;
+      color: #ffffff;
+      border: 1px solid #555;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 75px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
       color: #f4c542;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #cccccc;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-photo img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 3px solid #f4c542;
+    }
+
+    .about-text h2 {
+      font-size: 35px;
+      margin-top: 0;
+    }
+
+    .about-text p {
+      color: #dddddd;
+    }
+
+    .quote {
+      margin-top: 25px;
+      padding: 20px;
+      border-left: 4px solid #f4c542;
+      background: #111827;
+      font-size: 20px;
       font-weight: bold;
     }
 
-    .photo-section {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 20px;
-      text-align: center;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .photo-section h2 {
-      color: #f4c542;
-      font-size: 32px;
-    }
-
-    .photo {
-      width: 100%;
-      max-width: 700px;
-      height: auto;
-      display: block;
-      margin: 30px auto;
+    .card {
+      background: #111827;
+      padding: 30px 24px;
       border-radius: 15px;
-      border: 4px solid #f4c542;
+      border-top: 4px solid #f4c542;
+    }
+
+    .card h3 {
+      color: #f4c542;
+      font-size: 23px;
+    }
+
+    .card p {
+      color: #cccccc;
+    }
+
+    .cta {
+      text-align: center;
+      background: #071a3d;
+      padding: 75px 20px;
+      border-top: 3px solid #f4c542;
+      border-bottom: 3px solid #f4c542;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-top: 0;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 15px auto 25px;
+      color: #dddddd;
+      font-size: 18px;
     }
 
     footer {
       background: #111827;
       text-align: center;
-      padding: 30px 20px;
-      color: #ccc;
+      padding: 35px 20px;
+      color: #aaaaaa;
     }
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 34px;
+    footer strong {
+      color: #f4c542;
+    }
+
+    @media (max-width: 800px) {
+      .about-grid {
+        grid-template-columns: 1fr;
       }
 
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+    }
+
+    @media (max-width: 500px) {
       nav a {
-        display: inline-block;
-        margin: 6px;
+        margin: 4px 6px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 55px 18px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .section {
+        padding: 55px 18px;
+      }
+
+      .cta h2 {
+        font-size: 32px;
       }
     }
   </style>
@@ -116,7 +281,10 @@
 <body>
 
 <header>
-  <img src="chatito-logo.svg" alt="The Chatito Project">
+  <img
+    src="https://thechatitoproject.org/chatito-logo.svg"
+    alt="The Chatito Project"
+  >
 </header>
 
 <nav>
@@ -130,40 +298,155 @@
 </nav>
 
 <section class="hero">
-  <div class="gold">LOVE • AWARENESS • HOPE</div>
 
-  <h1>You are loved.<br>You matter.<br>Don't give up.</h1>
+  <div class="hero-content">
 
-  <p>
-    The Chatito Project was created in loving memory of Carlos,
-    known to his family and friends as Chatito.
-  </p>
+    <div class="eyebrow">
+      LOVE • AWARENESS • HOPE
+    </div>
 
-  <p>
-    Our mission is to raise awareness, encourage young people to
-    speak up, and remind every child that they are never alone.
-  </p>
+    <h1>
+      You are loved.<br>
+      <span>You matter.</span><br>
+      Don't give up.
+    </h1>
+
+    <p>
+      The Chatito Project was created in loving memory of Carlos
+      “Chatito” to raise awareness, encourage young people to speak up,
+      and remind every person that their life matters.
+    </p>
+
+    <div class="buttons">
+      <a class="button button-gold" href="gallery.html">
+        Remember Carlos
+      </a>
+
+      <a class="button button-blue" href="resources.html">
+        Get Help
+      </a>
+
+      <a class="button button-dark" href="get-involved.html">
+        Get Involved
+      </a>
+    </div>
+
+  </div>
+
 </section>
 
-<section class="photo-section">
+<section class="section">
 
-  <h2>Remember Carlos</h2>
+  <div class="about-grid">
+
+    <div class="about-photo">
+      <img
+        src="https://thechatitoproject.org/IMG_0096.jpeg"
+        alt="Carlos smiling and giving two thumbs up"
+      >
+    </div>
+
+    <div class="about-text">
+
+      <h2>Remembering Carlos</h2>
+
+      <p>
+        Carlos was known as “Chatito” to the people who loved him.
+        He had a smile that could light up a room and a personality
+        that made people feel welcome.
+      </p>
+
+      <p>
+        He loved being outdoors, playing football with the neighborhood
+        kids, riding his bike with friends, talking to people, and
+        making connections with everyone around him.
+      </p>
+
+      <p>
+        The Chatito Project exists so that Carlos' story can continue
+        to make a difference.
+      </p>
+
+      <div class="quote">
+        You are loved. You matter. You are not a burden. Don't give up.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="section-title">
+
+    <h2>Why We Are Here</h2>
+
+    <p>
+      Sometimes someone is hurting in ways we cannot see.
+      A conversation, a listening ear, or simply reminding someone
+      that they matter can make a difference.
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Speak Up</h3>
+
+      <p>
+        We encourage young people to talk about what they are feeling
+        and to reach out when life feels overwhelming.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Listen & Connect</h3>
+
+      <p>
+        We believe listening without judgment can help someone feel
+        heard, valued, and less alone.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Spread Hope</h3>
+
+      <p>
+        We want every young person to know that a difficult moment
+        does not have to define their future.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <h2>You Matter.</h2>
 
   <p>
-    These photos are a small glimpse of the person Carlos was —
-    his smile, his laughter, his personality, and the memories
-    that will always remain.
+    If you are struggling, please don't face it alone.
+    Reach out to someone you trust and ask for help.
   </p>
-<img
-  class="photo"
-  src="https://thechatitoproject.org/IMG_0096.jpeg"
-  alt="Carlos"
->
+
+  <a class="button button-gold" href="resources.html">
+    Find Support
+  </a>
+
+  <a class="button button-dark" href="contact.html">
+    Leave a Note
+  </a>
 
 </section>
 
 <footer>
-  The Chatito Project • Created in loving memory of Carlos “Chatito.”
+  <strong>The Chatito Project</strong><br>
+  Created in loving memory of Carlos “Chatito.”<br><br>
+  Love • Awareness • Hope
 </footer>
 
 </body>
