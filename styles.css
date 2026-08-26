@@ -2,12 +2,15 @@
    THE CHATITO PROJECT
    Main Website Styles
    ========================================= */
+
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,22 +18,29 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
+
+
 /* =========================================
    HEADER
    ========================================= */
+
 header {
   background: #071a3d;
   padding: 22px 20px;
   text-align: center;
   border-bottom: 4px solid #f4c542;
 }
+
 header img {
   width: 190px;
   max-width: 80%;
 }
+
+
 /* =========================================
    NAVIGATION
    ========================================= */
+
 nav {
   background: #111827;
   padding: 16px 10px;
@@ -40,6 +50,7 @@ nav {
   z-index: 10;
   border-bottom: 1px solid #333;
 }
+
 nav a {
   color: #ffffff;
   text-decoration: none;
@@ -47,12 +58,16 @@ nav a {
   font-weight: bold;
   display: inline-block;
 }
+
 nav a:hover {
   color: #f4c542;
 }
+
+
 /* =========================================
    HERO
    ========================================= */
+
 .hero {
   min-height: 650px;
   display: flex;
@@ -60,6 +75,7 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   padding: 70px 20px;
+
   background:
     linear-gradient(
       rgba(7, 26, 61, 0.88),
@@ -68,35 +84,44 @@ nav a:hover {
     url("https://thechatitoproject.org/IMG_0096.jpeg")
     center/cover no-repeat;
 }
+
 .hero-content {
   max-width: 850px;
 }
+
 .eyebrow {
   color: #f4c542;
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 15px;
 }
+
 .hero h1 {
   font-size: clamp(42px, 7vw, 72px);
   line-height: 1.08;
   margin: 20px 0;
 }
+
 .hero h1 span {
   color: #f4c542;
 }
+
 .hero p {
   max-width: 720px;
   margin: 20px auto;
   font-size: 20px;
   color: #eeeeee;
 }
+
+
 /* =========================================
    BUTTONS
    ========================================= */
+
 .buttons {
   margin-top: 35px;
 }
+
 .button {
   display: inline-block;
   padding: 14px 25px;
@@ -106,66 +131,83 @@ nav a:hover {
   font-weight: bold;
   transition: transform 0.2s ease;
 }
+
 .button:hover {
   transform: translateY(-2px);
 }
+
 .button-gold {
   background: #f4c542;
   color: #050608;
 }
+
 .button-blue {
   background: #0878d1;
   color: #ffffff;
 }
+
 .button-dark {
   background: #111827;
   color: #ffffff;
   border: 1px solid #555;
 }
+
+
 /* =========================================
    GENERAL SECTIONS
    ========================================= */
+
 .section {
   max-width: 1100px;
   margin: auto;
   padding: 75px 20px;
 }
+
 .section-title {
   text-align: center;
   margin-bottom: 45px;
 }
+
 .section-title h2 {
   color: #f4c542;
   font-size: 38px;
   margin-bottom: 10px;
 }
+
 .section-title p {
   max-width: 700px;
   margin: auto;
   color: #cccccc;
 }
+
+
 /* =========================================
    ABOUT / REMEMBERING CARLOS
    ========================================= */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 45px;
   align-items: center;
 }
+
 .about-photo img {
   width: 100%;
   display: block;
   border-radius: 18px;
   border: 3px solid #f4c542;
 }
+
 .about-text h2 {
   font-size: 35px;
   margin-top: 0;
 }
+
 .about-text p {
   color: #dddddd;
 }
+
 .quote {
   margin-top: 25px;
   padding: 20px;
@@ -174,45 +216,57 @@ nav a:hover {
   font-size: 20px;
   font-weight: bold;
 }
+
+
 /* =========================================
    WHY WE ARE HERE CARDS
    ========================================= */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
+
 .card {
   background: #111827;
   padding: 30px 24px;
   border-radius: 15px;
   border-top: 4px solid #f4c542;
 }
+
 .card h3 {
   color: #f4c542;
   font-size: 23px;
 }
+
 .card p {
   color: #cccccc;
 }
+
+
 /* =========================================
    BACK-TO-SCHOOL EVENT
    ========================================= */
+
 .event-section {
   background: #071a3d;
   padding: 80px 20px;
   border-top: 3px solid #f4c542;
   border-bottom: 3px solid #f4c542;
 }
+
 .event-container {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .event-header {
   text-align: center;
   max-width: 850px;
   margin: 0 auto 45px;
 }
+
 .event-eyebrow {
   color: #f4c542;
   font-size: 15px;
@@ -220,20 +274,25 @@ nav a:hover {
   letter-spacing: 3px;
   margin-bottom: 10px;
 }
+
 .event-header h2 {
   color: #ffffff;
   font-size: 42px;
   margin: 10px 0 20px;
 }
+
 .event-intro,
 .event-text {
   color: #dddddd;
   font-size: 18px;
   line-height: 1.7;
 }
+
+
 /* =========================================
    202 FAMILIES STAT
    ========================================= */
+
 .event-stat {
   margin: 30px auto;
   padding: 25px;
@@ -243,12 +302,14 @@ nav a:hover {
   border: 2px solid #f4c542;
   text-align: center;
 }
+
 .event-stat strong {
   display: block;
   color: #f4c542;
   font-size: 52px;
   line-height: 1;
 }
+
 .event-stat span {
   display: block;
   margin-top: 8px;
@@ -257,14 +318,18 @@ nav a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+
 /* =========================================
    EVENT PHOTO GALLERY
    ========================================= */
+
 .event-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
+
 .event-gallery img {
   width: 100%;
   height: 280px;
@@ -274,13 +339,173 @@ nav a:hover {
   display: block;
   transition: transform 0.3s ease;
 }
+
 .event-gallery img:hover {
   transform: scale(1.02);
   border-color: #f4c542;
 }
+
+
+/* =========================================
+   2ND COMMUNITY EVENT
+   CHRISTMAS TOY DRIVE
+   ========================================= */
+
+.toy-drive-section {
+  padding: 80px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #050608,
+      #071a3d
+    );
+
+  color: #ffffff;
+  text-align: center;
+
+  border-top: 3px solid #f4c542;
+  border-bottom: 3px solid #f4c542;
+}
+
+.toy-drive-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.toy-drive-header {
+  max-width: 800px;
+  margin: 0 auto 45px;
+}
+
+.toy-drive-eyebrow {
+  color: #f4c542;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.toy-drive-section h2 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.toy-drive-section h3 {
+  font-size: 28px;
+  margin: 10px 0 20px;
+  color: #f4c542;
+}
+
+.toy-drive-intro {
+  font-size: 20px;
+  line-height: 1.7;
+  margin: 20px auto;
+  color: #eeeeee;
+}
+
+.toy-drive-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cccccc;
+}
+
+
+/* =========================================
+   AMAZON TOY DRIVE CARD
+   ========================================= */
+
+.toy-drive-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 45px 30px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  border-radius: 18px;
+
+  border: 3px solid #f4c542;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.toy-drive-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.toy-drive-card h3 {
+  color: #f4c542;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.toy-drive-card p {
+  color: #dddddd;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   AMAZON REGISTRY BUTTON
+   ========================================= */
+
+.toy-drive-button {
+  display: inline-block;
+
+  padding: 17px 30px;
+
+  background: #f4c542;
+
+  color: #050608;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  border: 2px solid #f4c542;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.toy-drive-button:hover {
+  transform: translateY(-3px);
+
+  background: #ffffff;
+
+  color: #071a3d;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.toy-drive-thankyou {
+  margin-top: 28px;
+  margin-bottom: 0 !important;
+
+  color: #f4c542 !important;
+
+  font-weight: bold;
+}
+
+
 /* =========================================
    DONATION SECTION
    ========================================= */
+
 .donation-section {
   background: #111827;
   padding: 75px 20px;
@@ -288,22 +513,28 @@ nav a:hover {
   border-top: 3px solid #f4c542;
   border-bottom: 3px solid #f4c542;
 }
+
 .donation-section .section-title {
   max-width: 800px;
   margin: 0 auto 35px;
 }
+
 .donation-section h2 {
   color: #f4c542;
   font-size: 38px;
   margin-bottom: 10px;
 }
+
 .donation-section p {
   color: #dddddd;
   font-size: 18px;
 }
+
+
 /* =========================================
    FINAL CALL TO ACTION
    ========================================= */
+
 .cta {
   text-align: center;
   background: #071a3d;
@@ -311,79 +542,157 @@ nav a:hover {
   border-top: 3px solid #f4c542;
   border-bottom: 3px solid #f4c542;
 }
+
 .cta h2 {
   font-size: 40px;
   margin-top: 0;
 }
+
 .cta p {
   max-width: 700px;
   margin: 15px auto 25px;
   color: #dddddd;
   font-size: 18px;
 }
+
+
 /* =========================================
    FOOTER
    ========================================= */
+
 footer {
   background: #111827;
   text-align: center;
   padding: 35px 20px;
   color: #aaaaaa;
 }
+
 footer strong {
   color: #f4c542;
 }
+
+
 /* =========================================
    TABLET
    ========================================= */
+
 @media (max-width: 800px) {
+
   .about-grid {
     grid-template-columns: 1fr;
   }
+
   .cards {
     grid-template-columns: 1fr;
   }
+
   .event-gallery {
     grid-template-columns: 1fr 1fr;
   }
+
   .hero {
     min-height: 600px;
   }
+
+  .toy-drive-section h2 {
+    font-size: 38px;
+  }
+
 }
+
+
 /* =========================================
    MOBILE
    ========================================= */
+
 @media (max-width: 500px) {
+
   nav a {
     margin: 4px 6px;
     font-size: 14px;
   }
+
   .hero {
     padding: 55px 18px;
   }
+
   .hero p {
     font-size: 17px;
   }
+
   .section {
     padding: 55px 18px;
   }
+
   .cta h2 {
     font-size: 32px;
   }
+
   .donation-section h2 {
     font-size: 32px;
   }
+
   .event-section {
     padding: 60px 15px;
   }
+
   .event-header h2 {
     font-size: 32px;
   }
+
   .event-gallery {
     grid-template-columns: 1fr;
     gap: 12px;
   }
+
   .event-gallery img {
     height: auto;
   }
+
+
+  /* TOY DRIVE MOBILE */
+
+  .toy-drive-section {
+    padding: 60px 15px;
+  }
+
+  .toy-drive-eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .toy-drive-section h2 {
+    font-size: 32px;
+  }
+
+  .toy-drive-section h3 {
+    font-size: 24px;
+  }
+
+  .toy-drive-intro {
+    font-size: 18px;
+  }
+
+  .toy-drive-text {
+    font-size: 16px;
+  }
+
+  .toy-drive-card {
+    padding: 35px 20px;
+  }
+
+  .toy-drive-icon {
+    font-size: 48px;
+  }
+
+  .toy-drive-card h3 {
+    font-size: 25px;
+  }
+
+  .toy-drive-button {
+    width: 100%;
+    padding: 16px 15px;
+    font-size: 16px;
+  }
+
 }
