@@ -154,6 +154,335 @@ nav a:hover {
 
 
 /* =========================================
+   FEATURED PRIORITY EVENT
+   CHRISTMAS TOY DRIVE
+   ========================================= */
+
+.toy-drive-feature {
+  position: relative;
+
+  padding: 85px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071a3d,
+      #050608
+    );
+
+  text-align: center;
+
+  border-top: 5px solid #f4c542;
+  border-bottom: 5px solid #f4c542;
+
+  overflow: hidden;
+}
+
+
+/* Decorative glow */
+
+.toy-drive-feature::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: rgba(244, 197, 66, 0.08);
+
+  top: -150px;
+  left: -150px;
+}
+
+.toy-drive-feature::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: rgba(8, 120, 209, 0.08);
+
+  bottom: -150px;
+  right: -150px;
+}
+
+
+.toy-drive-feature-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 950px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   PRIORITY BADGE
+   ========================================= */
+
+.priority-badge {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  margin-bottom: 18px;
+
+  background: #f4c542;
+
+  color: #050608;
+
+  border-radius: 50px;
+
+  font-size: 14px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.toy-drive-date {
+  color: #f4c542;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 10px;
+}
+
+
+.toy-drive-feature h2 {
+  color: #ffffff;
+
+  font-size: clamp(38px, 6vw, 58px);
+
+  line-height: 1.1;
+
+  margin: 10px 0 5px;
+}
+
+
+.toy-drive-feature h3 {
+  color: #f4c542;
+
+  font-size: clamp(26px, 4vw, 36px);
+
+  margin: 5px 0 20px;
+}
+
+
+.toy-drive-lead {
+  max-width: 760px;
+
+  margin: 0 auto 15px;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+  color: #ffffff;
+}
+
+
+.toy-drive-message {
+  max-width: 760px;
+
+  margin: 0 auto 40px;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: #dddddd;
+}
+
+
+/* =========================================
+   AMAZON PRIORITY BOX
+   ========================================= */
+
+.amazon-priority-box {
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  padding: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  text-align: left;
+
+  background: #111827;
+
+  border: 4px solid #f4c542;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.45);
+
+}
+
+
+.amazon-gift-icon {
+
+  flex: 0 0 90px;
+
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f4c542;
+
+  border-radius: 50%;
+
+  font-size: 45px;
+}
+
+
+.amazon-priority-content {
+  flex: 1;
+}
+
+
+.amazon-small-heading {
+
+  color: #f4c542;
+
+  font-size: 13px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 5px;
+}
+
+
+.amazon-priority-content h4 {
+
+  color: #ffffff;
+
+  font-size: 27px;
+
+  line-height: 1.2;
+
+  margin: 0 0 8px;
+}
+
+
+.amazon-priority-content p {
+
+  color: #cccccc;
+
+  font-size: 16px;
+
+  margin: 0 0 20px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   AMAZON REGISTRY BUTTON
+   ========================================= */
+
+.amazon-registry-button {
+
+  display: inline-block;
+
+  width: 100%;
+
+  padding: 18px 20px;
+
+  background: #f4c542;
+
+  color: #050608;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-size: 17px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.3px;
+
+  border: 3px solid #f4c542;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.amazon-registry-button:hover {
+
+  transform: translateY(-3px);
+
+  background: #ffffff;
+
+  color: #071a3d;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+.amazon-note {
+
+  margin-top: 15px;
+
+  text-align: center;
+
+  color: #f4c542;
+
+  font-weight: bold;
+
+  font-size: 15px;
+}
+
+
+.toy-drive-thank-you {
+
+  margin: 30px auto 0;
+
+  color: #cccccc;
+
+  font-size: 16px;
+
+  font-style: italic;
+}
+
+
+/* =========================================
    GENERAL SECTIONS
    ========================================= */
 
@@ -347,162 +676,6 @@ nav a:hover {
 
 
 /* =========================================
-   2ND COMMUNITY EVENT
-   CHRISTMAS TOY DRIVE
-   ========================================= */
-
-.toy-drive-section {
-  padding: 80px 20px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #050608,
-      #071a3d
-    );
-
-  color: #ffffff;
-  text-align: center;
-
-  border-top: 3px solid #f4c542;
-  border-bottom: 3px solid #f4c542;
-}
-
-.toy-drive-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.toy-drive-header {
-  max-width: 800px;
-  margin: 0 auto 45px;
-}
-
-.toy-drive-eyebrow {
-  color: #f4c542;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-bottom: 12px;
-}
-
-.toy-drive-section h2 {
-  font-size: 44px;
-  line-height: 1.15;
-  margin: 10px 0;
-  color: #ffffff;
-}
-
-.toy-drive-section h3 {
-  font-size: 28px;
-  margin: 10px 0 20px;
-  color: #f4c542;
-}
-
-.toy-drive-intro {
-  font-size: 20px;
-  line-height: 1.7;
-  margin: 20px auto;
-  color: #eeeeee;
-}
-
-.toy-drive-text {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #cccccc;
-}
-
-
-/* =========================================
-   AMAZON TOY DRIVE CARD
-   ========================================= */
-
-.toy-drive-card {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 45px 30px;
-
-  background: #111827;
-
-  color: #ffffff;
-
-  border-radius: 18px;
-
-  border: 3px solid #f4c542;
-
-  box-shadow:
-    0 15px 40px rgba(0, 0, 0, 0.35);
-}
-
-.toy-drive-icon {
-  font-size: 55px;
-  margin-bottom: 10px;
-}
-
-.toy-drive-card h3 {
-  color: #f4c542;
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.toy-drive-card p {
-  color: #dddddd;
-  font-size: 17px;
-  line-height: 1.7;
-  margin-bottom: 25px;
-}
-
-
-/* =========================================
-   AMAZON REGISTRY BUTTON
-   ========================================= */
-
-.toy-drive-button {
-  display: inline-block;
-
-  padding: 17px 30px;
-
-  background: #f4c542;
-
-  color: #050608;
-
-  font-size: 17px;
-  font-weight: 800;
-
-  text-decoration: none;
-
-  border-radius: 10px;
-
-  border: 2px solid #f4c542;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    background 0.2s ease;
-}
-
-.toy-drive-button:hover {
-  transform: translateY(-3px);
-
-  background: #ffffff;
-
-  color: #071a3d;
-
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.toy-drive-thankyou {
-  margin-top: 28px;
-  margin-bottom: 0 !important;
-
-  color: #f4c542 !important;
-
-  font-weight: bold;
-}
-
-
-/* =========================================
    DONATION SECTION
    ========================================= */
 
@@ -594,8 +767,13 @@ footer strong {
     min-height: 600px;
   }
 
-  .toy-drive-section h2 {
-    font-size: 38px;
+  .amazon-priority-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .amazon-priority-content {
+    width: 100%;
   }
 
 }
@@ -650,49 +828,64 @@ footer strong {
   }
 
 
-  /* TOY DRIVE MOBILE */
+  /* =====================================
+     TOY DRIVE MOBILE
+     ===================================== */
 
-  .toy-drive-section {
-    padding: 60px 15px;
+  .toy-drive-feature {
+    padding: 65px 15px;
   }
 
-  .toy-drive-eyebrow {
+  .priority-badge {
+    font-size: 11px;
+    padding: 9px 14px;
+    letter-spacing: 1px;
+  }
+
+  .toy-drive-date {
     font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
 
-  .toy-drive-section h2 {
-    font-size: 32px;
+  .toy-drive-feature h2 {
+    font-size: 34px;
   }
 
-  .toy-drive-section h3 {
-    font-size: 24px;
-  }
-
-  .toy-drive-intro {
-    font-size: 18px;
-  }
-
-  .toy-drive-text {
-    font-size: 16px;
-  }
-
-  .toy-drive-card {
-    padding: 35px 20px;
-  }
-
-  .toy-drive-icon {
-    font-size: 48px;
-  }
-
-  .toy-drive-card h3 {
+  .toy-drive-feature h3 {
     font-size: 25px;
   }
 
-  .toy-drive-button {
-    width: 100%;
-    padding: 16px 15px;
+  .toy-drive-lead {
+    font-size: 18px;
+  }
+
+  .toy-drive-message {
     font-size: 16px;
+  }
+
+  .amazon-priority-box {
+    padding: 28px 18px;
+    gap: 15px;
+  }
+
+  .amazon-gift-icon {
+    width: 75px;
+    height: 75px;
+    flex-basis: 75px;
+    font-size: 37px;
+  }
+
+  .amazon-priority-content h4 {
+    font-size: 23px;
+  }
+
+  .amazon-priority-content p {
+    font-size: 15px;
+  }
+
+  .amazon-registry-button {
+    font-size: 15px;
+    padding: 16px 12px;
   }
 
 }
